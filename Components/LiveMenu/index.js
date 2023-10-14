@@ -39,7 +39,7 @@ const LiveMenu = (props) => {
         <ScrollView style={styles.container}>
             <Topspace />
             {data.map((item, index) => (
-                <StreamButton key={index} title={item} thumbnail={item.thumbnail} description = {item.title} link = {item.link}/>
+                <StreamButton key={index} title={item} thumbnail={item.thumbnail} description = {item.title} link = {item.link} navigation={props.navigation}/>
             ))}
         </ScrollView>
     );
